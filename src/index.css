@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-900 text-text-200 font-sans leading-relaxed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-primary-500 bg-opacity-30 text-primary-200;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-500 rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-300;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply flex items-center mb-10 font-mono text-primary-400 text-lg font-semibold whitespace-nowrap;
+  }
+
+  .section-heading::after {
+    @apply ml-5 h-px bg-text-400 block;
+    content: '';
+    position: relative;
+    top: -5px;
+    width: 300px;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center px-7 py-4 text-primary-400 font-mono text-sm 
+           border border-primary-400 rounded bg-transparent 
+           hover:bg-primary-500 hover:bg-opacity-10 hover:shadow-glow-primary
+           transition-all duration-250 ease-in-out;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center px-4 py-2 text-accent-400 font-mono text-sm 
+           border border-accent-400 rounded bg-transparent 
+           hover:bg-accent-500 hover:bg-opacity-10 hover:shadow-glow-accent
+           transition-all duration-250 ease-in-out;
+  }
+
+  .nav-link {
+    @apply relative text-text-300 hover:text-primary-400 transition-colors duration-200 py-2;
+  }
+
+  .nav-link::before {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 transition-all duration-300;
+    content: '';
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    @apply w-full;
+  }
+
+  .project-card {
+    @apply bg-dark-800 rounded-lg p-6 hover:transform hover:-translate-y-2 
+           transition-all duration-300 ease-linear shadow-lg 
+           hover:shadow-xl-primary border border-dark-700 hover:border-primary-500 hover:border-opacity-50;
+  }
+
+  .fade-in {
+    @apply opacity-0 transform translate-y-6;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
