@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React and Tailwind CSS, inspired by [Brittany Chiang's portfolio](https://v4.brittanychiang.com/).
 
+![Official Site](https://github.com/user-attachments/assets/9648c8e2-8da3-40d6-8e56-58ce03a820c9)
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, minimalist design with dark theme
