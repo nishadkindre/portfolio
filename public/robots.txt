@@ -1,0 +1,35 @@
+# Portfolio Robots.txt
+# Allowing all web crawlers to access all content
+
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block access to sensitive areas (if any exist in future)
+Disallow: /api/
+Disallow: /private/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Allow access to all static assets
+Allow: /static/
+Allow: /manifest.json
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://nishadkindre.vercel.app/sitemap.xml
+
+# Additional directives for SEO
+# Clean URLs and profile pages are crawlable
+Allow: /*
+
+# Note: This is an open robots.txt that welcomes all crawlers
+# Nishad Kindre - Portfolio is designed to be fully accessible for indexing
