@@ -58,11 +58,11 @@ export const workExperience = [
     url: 'https://medtigo.com',
     range: 'November 2024 - Present',
     description: [
-      'Implemented Database design with end to end feature development targetted for Global Healthcare professionals',
-      'Reduced dependencies on third-party services, cutting costs by 30% by implementing in-house tools',
-      'Developed cross platform APIs and Optimised prime APIs response time by 80%',
-      'Led the migration of legacy systems to modern frameworks, improving maintainability, performance & implementing best coding practices',
-      'Developed & maintained end to end payment infrastructure for domestic and international payments using Stripe and Razorpay'
+      'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
+      'Cut operational expenses through strategic in-house tool development, eliminating external service dependencies',
+      'Enhanced crucial APIs performance by 80%, building cross-platform endpoints that scale efficiently',
+      'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
+      'Implemented end-to-end payment processing infrastructure for multi-currency transactions using Stripe and Razorpay'
     ]
   },
   {
@@ -71,10 +71,10 @@ export const workExperience = [
     url: 'https://medtigo.com',
     range: 'May 2024 - November 2024',
     description: [
-      'Implemented SOC 2 compliant features',
-      'Lead project of migrating old website theme to new design system',
-      'Optimised application build size by 70%',
-      'Developed End to end user real time Quiz tracking system'
+      'Implemented SOC 2 compliance features ensuring enterprise security standards',
+      'Led website transformation project, modernizing legazy UI to modern scalable design system',
+      'Reduced application bundle size by 70% through code optimization and efficient asset management',
+      'Created real-time quiz tracking capabilities and detailed user engagement metrics'
     ]
   }
 ];
