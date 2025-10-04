@@ -23,7 +23,6 @@
     width: 4px;
   }
 
-
   ::-webkit-scrollbar-thumb {
     @apply bg-primary-500 rounded-lg;
   }

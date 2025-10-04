@@ -16,7 +16,8 @@ const About = () => {
           <div className="lg:col-span-2">
             <div className={`space-y-6 text-text-400 text-lg leading-relaxed transition-all duration-1000 ${hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <p>
-                Hello! I'm Nishad Kindre, and I enjoy creating things that live on the internet. I started my development journey in 2023 and haven't looked back since. There's something addictive about solving problems with code and seeing users interact with what you've built.
+                Hello! I'm Nishad Kindre, and I enjoy creating things that live on the internet. I started my development journey in 2023 and haven't looked back since. There's something addictive
+                about solving problems with code and seeing users interact with what you've built.
               </p>
 
               <p>

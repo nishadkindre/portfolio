@@ -62,7 +62,7 @@ export const workExperience = [
       'Reduced dependencies on third-party services, cutting costs by 30% by implementing in-house tools',
       'Developed cross platform APIs and Optimised prime APIs response time by 80%',
       'Led the migration of legacy systems to modern frameworks, improving maintainability, performance & implementing best coding practices',
-      'Developed & maintained end to end payment infrastructure for domestic and international payments using Stripe and Razorpay',
+      'Developed & maintained end to end payment infrastructure for domestic and international payments using Stripe and Razorpay'
     ]
   },
   {
@@ -91,8 +91,7 @@ export const featuredProjects = [
   },
   {
     title: 'SQLHub',
-    description:
-      'A SQL learning platform that runs entirely in your browser. Practice with real databases, execute complex queries, and master SQL without any setup or backend.',
+    description: 'A SQL learning platform that runs entirely in your browser. Practice with real databases, execute complex queries, and master SQL without any setup or backend.',
     technologies: ['React', 'Material-UI', 'SQL', 'Real-time DB'],
     github: 'https://github.com/nishadkindre/sqlhub',
     external: 'https://sqlhub.vercel.app',
