@@ -25,7 +25,8 @@ const About = () => {
                 <a href="https://medtigo.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:underline">
                   a health-tech start-up
                 </a>
-                . My main focus these days is building accessible, inclusive products for developers and end users.
+                {' '}
+                since 2024. My main focus these days is building accessible, inclusive products for developers and end users.
               </p>
 
               <p>Here are a few technologies I've been working with recently:</p>
