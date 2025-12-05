@@ -62,7 +62,8 @@ export const workExperience = [
       'Cut operational expenses through strategic in-house tool development, eliminating external service dependencies',
       'Enhanced crucial APIs performance by 80%, building cross-platform endpoints that scale efficiently',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
-      'Implemented end-to-end payment processing infrastructure for multi-currency transactions using Stripe and Razorpay'
+      'Implemented end-to-end payment processing infrastructure for multi-currency transactions using Stripe and Razorpay',
+      'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products'
     ]
   },
   {
