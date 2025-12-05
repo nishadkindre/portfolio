@@ -59,7 +59,7 @@ export const workExperience = [
     range: 'November 2024 - Present',
     description: [
       'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
-      'Cut operational expenses through strategic in-house tool development, eliminating external service dependencies',
+      'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Enhanced crucial APIs performance by 80%, building cross-platform endpoints that scale efficiently',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
       'Implemented end-to-end payment processing infrastructure for multi-currency transactions using Stripe and Razorpay',
