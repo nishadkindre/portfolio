@@ -62,7 +62,6 @@ export const workExperience = [
       'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Enhanced crucial APIs performance by 80%, building cross-platform endpoints that scale efficiently',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
-      'Implemented end-to-end payment processing infrastructure for multi-currency transactions using Stripe and Razorpay',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products'
     ]
   },
