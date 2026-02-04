@@ -111,7 +111,7 @@ export const featuredProjects = [
 export const otherProjects = [
   {
     title: 'Viewport Sense',
-    description: 'A recipe search application with ingredient-based filtering and meal planning features.',
+    description: 'A comprehensive, lightweight viewport utility library for responsive web applications',
     technologies: ['npm package', 'TypeScript', 'React Hooks'],
     github: 'https://github.com/nishadkindre/viewport-sense',
     external: 'https://www.npmjs.com/package/viewport-sense'
