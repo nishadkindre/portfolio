@@ -60,7 +60,7 @@ export const workExperience = [
     description: [
       'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
       'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
-      'Improved crucial cross-platform API respince time ~80% by replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
+      'Improved crucial cross-platform API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products'
     ]
