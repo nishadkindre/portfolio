@@ -58,12 +58,13 @@ export const workExperience = [
     url: 'https://medtigo.com',
     range: 'November 2024 - Present',
     description: [
-      'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
+      // 'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
       'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Improved crucial cross-platform API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
-      'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products',
-      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows'
+      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows',
+      'Implemented bulk onboarding system to process over 100K users, handle duplicates, ensure data quality, and manage system load to avoid failures.'
+      'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
     ]
   },
   {
