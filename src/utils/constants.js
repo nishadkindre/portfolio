@@ -59,6 +59,7 @@ export const workExperience = [
     range: 'November 2024 - Present',
     description: [
       // 'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
+      'Automated end-to-end licensing invoice workflow integrated with QuickBooks, processing invoices in real-time as they are created, with 700+ invoices ($400K+) and $300K+ payments handled to date with zero manual intervention post invoice creation.',
       'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Improved crucial cross-platform API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products',
