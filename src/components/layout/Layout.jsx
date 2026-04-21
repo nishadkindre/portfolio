@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+// import Cursor from '../ui/Cursor';
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-navy-900 text-slate-300">
+    <div className="min-h-screen bg-nb-white text-nb-black">
+      {/* <Cursor /> */}
       <Header />
-      <main className="relative">{children}</main>
+      <main className="pt-16">{children}</main>
       <Footer />
     </div>
   );

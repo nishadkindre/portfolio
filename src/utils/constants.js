@@ -59,13 +59,13 @@ export const workExperience = [
     range: 'November 2024 - Present',
     description: [
       // 'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
-      'Automated end-to-end licensing invoice workflow integrated with QuickBooks, processing invoices in real-time as they are created, with 700+ invoices ($400K+) and $300K+ payments handled to date with zero manual intervention post invoice creation.',
+      'Automated end-to-end licensing invoice workflow for US healthcare professionals with QuickBooks integration, processing invoices in real-time as they are created, with 800+ invoices ($400K+) and $300K+ payments handled to date with zero manual intervention post invoice creation',
       'Created automated PDF certificate generation system, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
-      'Improved crucial cross-platform API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
+      'Improved crucial cross-platform LMS API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
+      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows, handling $100K+ in credit transactions to date',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products',
-      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows',
-      'Implemented bulk onboarding system to process over 100K users, handle duplicates, ensure data quality, and manage system load to avoid failures.',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
+      'Implemented bulk onboarding system to process over 100K users, handle duplicates, ensure data quality, and manage system load to avoid failures',
     ]
   },
   {
@@ -75,7 +75,7 @@ export const workExperience = [
     range: 'May 2024 - November 2024',
     description: [
       'Implemented SOC 2 compliance features ensuring enterprise security standards',
-      'Led website transformation project, modernizing legazy UI to modern scalable design system',
+      'Led website transformation project, modernizing legacy UI to modern scalable design system',
       'Reduced application bundle size by 70% through code optimization and efficient asset management',
       'Created real-time quiz tracking capabilities and detailed user engagement metrics'
     ]
