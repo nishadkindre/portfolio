@@ -5,22 +5,25 @@ import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { featuredProjects } from '../../utils/constants';
 
 const FeaturedProjects = () => {
-  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver();
+  const [ref, , hasIntersected] = useIntersectionObserver();
 
   return (
-    <section id="projects" ref={ref} className="px-6">
-      <div className="max-w-4xl mx-auto">
+    <section id="projects" ref={ref} className="py-24 px-6 lg:px-20 bg-nb-white">
+      <div className="max-w-5xl mx-auto">
         <SectionHeading number="03" title="Some Things I've Built" />
 
-        <div className="space-y-20">
-          {featuredProjects.map((project, index) => {
-            const flip = index % 2 !== 0;
-            return (
-              <div key={index} className={`transition-all duration-1000 ${hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: `${index * 0.2}s` }}>
-                <FeaturedProjectCard project={project} flip={flip} />
-              </div>
-            );
-          })}
+        <div className="space-y-10">
+          {featuredProjects.map((project, index) => (
+            <div
+              key={index}
+              className={`transition-all duration-700 ${
+                hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: `${index * 120}ms` }}
+            >
+              <FeaturedProjectCard project={project} flip={index % 2 !== 0} />
+            </div>
+          ))}
         </div>
       </div>
     </section>
