@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════════════════════════
+   SKEUOMORPHIC DESIGN SYSTEM — NISHAD KINDRE PORTFOLIO
+   Philosophy: parchment paper · warm brass · leather bindings
+               · hand-stamped type · physical depth & texture
+   ═══════════════════════════════════════════════════════════════ */
+
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* scroll-snap-type: y proximity; */
   }
 
   body {
@@ -13,172 +18,356 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    /* Subtle paper grain texture */
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    background-repeat: repeat;
   }
 
-  /* section {
-    scroll-snap-align: start;
-  } */
-
+  /* Warm parchment selection */
   ::selection {
-    @apply bg-nb-yellow text-nb-black;
+    background: #B8823A;
+    color: #FBF7F2;
   }
 
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-nb-gray;
-  }
-
+  /* Warm scrollbar */
+  ::-webkit-scrollbar { width: 7px; }
+  ::-webkit-scrollbar-track { background: #EAE0D2; }
   ::-webkit-scrollbar-thumb {
-    @apply bg-nb-black;
+    background: linear-gradient(180deg, #B8823A 0%, #7A5840 100%);
+    border-radius: 3px;
   }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-nb-muted;
-  }
+  ::-webkit-scrollbar-thumb:hover { background: #7A5840; }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold;
+    @apply font-display;
+    color: #1E140A;
+  }
+
+  a {
+    transition: color 0.15s ease, opacity 0.15s ease;
   }
 }
 
 @layer components {
-  /* ── BUTTONS ──────────────────────────────── */
+
+  /* ══════════════════════════════════════════
+     BUTTONS — Stamped metal / embossed paper
+     ══════════════════════════════════════════ */
+
+  /* Primary — brass stamped button */
   .btn-brutal {
     @apply inline-flex items-center justify-center
-           font-mono text-sm font-medium tracking-wide
-           border-2 border-nb-black bg-nb-yellow text-nb-black
-           shadow-brutal
-           hover:-translate-y-0.5 hover:shadow-brutal-lg hover:bg-nb-yellow-hover
-           active:translate-y-0 active:shadow-brutal-sm
-           transition-all duration-150 ease-in-out
-           px-6 py-3;
+           font-mono text-sm font-medium tracking-widest uppercase
+           px-7 py-3 rounded-sm;
+    color: #FBF7F2;
+    background: linear-gradient(175deg, #D4A055 0%, #B8823A 40%, #8C5E20 100%);
+    border: 1px solid #7A4E18;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.28),
+      inset 0 -1px 0 rgba(0,0,0,0.20),
+      0 4px 12px rgba(60,30,10,0.28),
+      0 1px 4px rgba(60,30,10,0.18);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+    transition: all 0.15s ease;
   }
 
+  .btn-brutal:hover {
+    background: linear-gradient(175deg, #DDB06A 0%, #C8923A 40%, #9C6E28 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.32),
+      inset 0 -1px 0 rgba(0,0,0,0.22),
+      0 6px 18px rgba(60,30,10,0.32),
+      0 2px 6px rgba(60,30,10,0.20);
+    transform: translateY(-1px);
+  }
+
+  .btn-brutal:active {
+    box-shadow:
+      inset 0 3px 7px rgba(60,30,10,0.35),
+      inset 0 1px 3px rgba(0,0,0,0.25);
+    transform: translateY(1px);
+  }
+
+  /* Outline — embossed paper button */
   .btn-brutal-outline {
     @apply inline-flex items-center justify-center
-           font-mono text-sm font-medium tracking-wide
-           border-2 border-nb-black bg-transparent text-nb-black
-           shadow-brutal
-           hover:-translate-y-0.5 hover:shadow-brutal-lg hover:bg-nb-gray
-           active:translate-y-0 active:shadow-brutal-sm
-           transition-all duration-150 ease-in-out
-           px-6 py-3;
+           font-mono text-sm font-medium tracking-widest uppercase
+           px-7 py-3 rounded-sm;
+    color: #4A2010;
+    background: linear-gradient(175deg, #FBF7F2 0%, #F0E4CC 60%, #E4D0B0 100%);
+    border: 1px solid #C8A878;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.70),
+      inset 0 -1px 0 rgba(0,0,0,0.08),
+      0 3px 10px rgba(60,30,10,0.16),
+      0 1px 3px rgba(60,30,10,0.10);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.60);
+    transition: all 0.15s ease;
   }
 
+  .btn-brutal-outline:hover {
+    background: linear-gradient(175deg, #FFFFFF 0%, #F8EDD8 60%, #ECD8B8 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.80),
+      inset 0 -1px 0 rgba(0,0,0,0.10),
+      0 5px 14px rgba(60,30,10,0.20),
+      0 2px 5px rgba(60,30,10,0.12);
+    transform: translateY(-1px);
+  }
+
+  .btn-brutal-outline:active {
+    box-shadow:
+      inset 0 3px 6px rgba(60,30,10,0.22),
+      inset 0 1px 2px rgba(0,0,0,0.12);
+    transform: translateY(1px);
+  }
+
+  /* Ghost */
   .btn-brutal-ghost {
     @apply inline-flex items-center justify-center
            font-mono text-sm font-medium tracking-wide
-           bg-transparent text-nb-black
-           hover:bg-nb-gray
-           transition-all duration-150 ease-in-out
-           px-4 py-2;
+           px-4 py-2 rounded-sm;
+    color: #7A5840;
+    background: transparent;
+    transition: all 0.15s ease;
+  }
+  .btn-brutal-ghost:hover {
+    background: rgba(184,130,58,0.10);
+    color: #4A2010;
   }
 
-  /* ── CARDS ────────────────────────────────── */
+  /* ══════════════════════════════════════════
+     CARDS — Elevated parchment panels
+     ══════════════════════════════════════════ */
+
   .card-brutal {
-    @apply border-2 border-nb-black bg-white shadow-brutal
-           hover:-translate-y-1 hover:shadow-brutal-lg
-           transition-all duration-200 ease-in-out;
+    background: linear-gradient(160deg, #FFFDF8 0%, #F8F2E8 60%, #F0E8D8 100%);
+    border: 1px solid #C8A878;
+    border-radius: 2px;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.75),
+      0 4px 16px rgba(60,30,10,0.14),
+      0 1px 4px rgba(60,30,10,0.09);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  /* ── TAGS/CHIPS ──────────────────────────── */
+  .card-brutal:hover {
+    transform: translateY(-3px) rotate(0.1deg);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.75),
+      0 10px 28px rgba(60,30,10,0.18),
+      0 3px 8px rgba(60,30,10,0.11);
+  }
+
+  /* ══════════════════════════════════════════
+     TAGS / CHIPS — Wax-seal labels
+     ══════════════════════════════════════════ */
+
   .tag-brutal {
-    @apply font-mono text-xs border border-nb-black bg-nb-gray
-           px-2 py-0.5 text-nb-black font-medium;
+    @apply font-mono text-xs font-medium tracking-wide;
+    color: #4A2010;
+    background: linear-gradient(135deg, #F0DDB8 0%, #E8CFA0 100%);
+    border: 1px solid #C8A878;
+    border-radius: 2px;
+    padding: 2px 8px;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.55),
+      0 1px 2px rgba(60,30,10,0.12);
   }
 
-  /* ── SECTION HEADING ─────────────────────── */
+  /* ══════════════════════════════════════════
+     SECTION HEADING — Engraved label
+     ══════════════════════════════════════════ */
+
   .section-heading {
-    @apply flex items-center gap-4 mb-14;
+    @apply flex items-center gap-5 mb-14;
   }
 
   .section-heading-num {
-    @apply font-mono text-sm font-medium text-nb-muted;
+    @apply font-mono text-sm font-medium;
+    color: #B8823A;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.60);
   }
 
   .section-heading-title {
-    @apply font-display font-bold text-nb-black text-2xl md:text-3xl;
+    @apply font-display font-bold text-2xl md:text-3xl;
+    color: #1E140A;
+    /* Debossed ink effect */
+    text-shadow: 0 1px 0 rgba(255,255,255,0.45), 0 -1px 0 rgba(0,0,0,0.06);
+    letter-spacing: 0.01em;
   }
 
   .section-heading-line {
-    @apply flex-1 h-0.5 bg-nb-black;
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, #C8A878 0%, rgba(200,168,120,0.15) 100%);
+    position: relative;
+  }
+  .section-heading-line::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.70) 0%, transparent 100%);
   }
 
-  /* ── NAV LINKS ──────────────────────────── */
+  /* ══════════════════════════════════════════
+     NAV LINKS — Hand-engraved letterpress
+     ══════════════════════════════════════════ */
+
   .nav-link {
-    @apply relative font-mono text-sm font-medium text-nb-black py-1
-           transition-colors duration-150;
+    @apply relative font-mono text-sm font-medium py-1;
+    color: #F0E4CC;
+    letter-spacing: 0.04em;
+    transition: color 0.15s ease;
   }
 
   .nav-link::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-nb-yellow transition-all duration-200;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #D4A055, #B8823A);
+    box-shadow: 0 0 4px rgba(184,130,58,0.50);
+    transition: width 0.22s ease;
+  }
+
+  .nav-link:hover {
+    color: #FFFFFF;
   }
 
   .nav-link:hover::after,
   .nav-link.active::after {
-    @apply w-full;
+    width: 100%;
   }
 
-  /* ── FADE ANIMATIONS ────────────────────── */
+  .nav-link.active {
+    color: #D4A055;
+  }
+
+  /* ══════════════════════════════════════════
+     FADE ANIMATIONS
+     ══════════════════════════════════════════ */
+
   .fade-in {
-    @apply opacity-0 translate-y-4;
-    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeInUp 0.55s ease-out forwards;
   }
 
   @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
-/* ── CUSTOM CURSOR ────────────────────────── */
-/* @media (hover: hover) and (pointer: fine) {
-  body { cursor: none !important; }
-  a, button, [role="button"] { cursor: none !important; }
+/* ════════════════════════════════════════════════════════════════
+   BACKGROUND TEXTURE CLASSES
+   ════════════════════════════════════════════════════════════════ */
 
-  .cursor-dot {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background: #FFE500;
-    border: 2px solid #0D0D0D;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width 0.18s ease, height 0.18s ease, background 0.18s ease;
-    will-change: left, top;
-  }
-
-  .cursor-dot--hover {
-    width: 26px;
-    height: 26px;
-    background: transparent;
-    border: 2px solid #0D0D0D;
-  }
-} */
-
-/* ── STRIPE BACKGROUND ───────────────────── */
-.stripe-bg {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #FFE500 0px, #FFE500 8px,
-    transparent 8px, transparent 18px
-  );
+/* Leather background for header */
+.bg-leather {
+  background-color: #2D1508;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
 }
 
-/* ── OUTLINED TEXT UTILITIES ─────────────── */
+/* Parchment texture for alternate sections */
+.bg-parchment {
+  background-color: #EAE0D2;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.80' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Debossed divider line */
+.divider-brass {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #C8A878 20%, #D4A055 50%, #C8A878 80%, transparent 100%);
+  position: relative;
+}
+.divider-brass::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 20%, rgba(255,255,255,0.70) 50%, rgba(255,255,255,0.55) 80%, transparent 100%);
+}
+
+/* Subtle page-paper grid lines (like quality writing paper) */
+.paper-lines {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 31px,
+      rgba(184,130,58,0.08) 31px,
+      rgba(184,130,58,0.08) 32px
+    );
+}
+
+/* Outlined ghost text (watermark) */
 .text-outline-ghost {
-  -webkit-text-stroke: 1.5px rgba(13, 13, 13, 0.07);
+  -webkit-text-stroke: 1.5px rgba(30,20,10,0.06);
   color: transparent;
 }
 
 .text-outline-name {
-  -webkit-text-stroke: 2.5px #0D0D0D;
+  -webkit-text-stroke: 2px #C8A878;
   color: transparent;
+  opacity: 0.18;
 }
+
+/* Stripe background accent (still used in hero) */
+.stripe-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(184,130,58,0.18) 0px, rgba(184,130,58,0.18) 6px,
+    transparent 6px, transparent 14px
+  );
+}
+
+/* ════════════════════════════════════════════════════════════════
+   PHOTO FRAME — Classic photo-paper border
+   ════════════════════════════════════════════════════════════════ */
+
+.photo-frame {
+  border: 8px solid #F4EDE0;
+  outline: 2px solid #C8A878;
+  box-shadow:
+    0 0 0 1px #EAD8BE,
+    8px 14px 38px rgba(60,30,10,0.35),
+    2px 3px 8px rgba(60,30,10,0.18);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   PANEL / INSET — Debossed inner panel effect
+   ════════════════════════════════════════════════════════════════ */
+
+.sk-panel {
+  background: linear-gradient(160deg, #EEE4D4 0%, #E4D8C4 100%);
+  border: 1px solid #C8A878;
+  border-radius: 2px;
+  box-shadow:
+    inset 0 2px 8px rgba(60,30,10,0.10),
+    inset 0 1px 3px rgba(60,30,10,0.07),
+    0 1px 0 rgba(255,255,255,0.60);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   TICKER — Aged ribbon strip
+   ════════════════════════════════════════════════════════════════ */
+
+.ticker-ribbon {
+  background: linear-gradient(180deg, #C8923A 0%, #B8823A 40%, #A07030 100%);
+  border-top: 1px solid #D4A055;
+  border-bottom: 1px solid #8C6028;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.22),
+    0 2px 6px rgba(60,30,10,0.22);
+}
+

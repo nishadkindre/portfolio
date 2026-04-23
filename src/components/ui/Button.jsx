@@ -16,7 +16,7 @@ const Button = ({ children, variant = 'primary', size = 'md', href, onClick, dis
   const classes = [
     variants[variant],
     size !== 'md' && sizes[size],
-    'disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-nb-black focus:ring-offset-2',
+    'disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-[#B8823A] focus:ring-offset-2',
     className,
   ]
     .filter(Boolean)

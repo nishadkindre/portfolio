@@ -25,7 +25,16 @@ const SocialLinks = ({ orientation = 'vertical', className = '' }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={social.name}
-            className="text-nb-muted hover:text-nb-black hover:-translate-y-0.5 transition-all duration-150"
+            className="transition-all duration-150"
+            style={{ color: '#C8A878' }}
+            onMouseEnter={e => {
+              e.currentTarget.style.color = '#D4A055';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.color = '#C8A878';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
           >
             {Icon && <Icon className="w-5 h-5" />}
           </a>

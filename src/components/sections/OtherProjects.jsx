@@ -10,14 +10,19 @@ const OtherProjects = () => {
   const displayedProjects = showMore ? otherProjects : otherProjects.slice(0, 6);
 
   return (
-    <section ref={ref} className="py-24 px-6 lg:px-20 bg-nb-gray">
+    <section
+      ref={ref}
+      className="py-24 px-6 lg:px-20"
+      style={{ background: 'linear-gradient(160deg, #EDE4D4 0%, #E8DDD0 60%, #E0D4C4 100%)' }}
+    >
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <div className="mb-14">
           <h2
-            className={`font-display font-black text-nb-black text-3xl md:text-4xl mb-3 transition-all duration-700 ${
+            className={`font-display font-black text-3xl md:text-4xl mb-3 transition-all duration-700 ${
               hasIntersected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
+            style={{ color: '#1E140A', letterSpacing: '-0.01em' }}
           >
             Other Noteworthy Projects
           </h2>
@@ -25,9 +30,10 @@ const OtherProjects = () => {
             href="https://github.com/nishadkindre"
             target="_blank"
             rel="noopener noreferrer"
-            className={`font-mono text-sm text-nb-muted underline underline-offset-2 hover:text-nb-black transition-all duration-700 delay-100 ${
+            className={`font-mono text-sm transition-all duration-700 delay-100 ${
               hasIntersected ? 'opacity-100' : 'opacity-0'
             }`}
+            style={{ color: '#B8823A', textDecoration: 'underline', textDecorationColor: '#C8A878', textUnderlineOffset: '3px' }}
           >
             view the archive ↗
           </a>

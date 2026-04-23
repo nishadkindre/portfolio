@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-// import Cursor from '../ui/Cursor';
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-nb-white text-nb-black">
-      {/* <Cursor /> */}
+    <div
+      className="min-h-screen"
+      style={{ background: '#F4EFE6', color: '#1E140A' }}
+    >
       <Header />
-      <main className="pt-16">{children}</main>
+      <main className="pt-[52px]">{children}</main>
       <Footer />
     </div>
   );

@@ -8,7 +8,12 @@ const FeaturedProjects = () => {
   const [ref, , hasIntersected] = useIntersectionObserver();
 
   return (
-    <section id="projects" ref={ref} className="py-24 px-6 lg:px-20 bg-nb-white">
+    <section
+      id="projects"
+      ref={ref}
+      className="py-24 px-6 lg:px-20"
+      style={{ background: 'linear-gradient(160deg, #F8F2E6 0%, #F4EFE6 60%, #EDE4D4 100%)' }}
+    >
       <div className="max-w-5xl mx-auto">
         <SectionHeading number="03" title="Some Things I've Built" />
 

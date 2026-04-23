@@ -3,52 +3,78 @@ import SocialLinks from '../ui/SocialLinks';
 
 const Footer = () => {
   return (
-    <footer className="bg-nb-white border-t-2 border-nb-black pt-8 pb-6 px-6">
-      {/* Full-bleed outlined name */}
-      {/* <div className="border-b-2 border-nb-black px-4 pt-8 pb-3 overflow-hidden">
-        <h2
-          className="font-display font-black uppercase leading-none tracking-tight text-outline-name"
-          style={{ fontSize: 'clamp(3.5rem, 11vw, 9rem)' }}
-        >
-          NISHAD KINDRE
-        </h2>
-      </div> */}
+    <footer
+      style={{
+        background: 'linear-gradient(180deg, #2D1508 0%, #1E0D04 100%)',
+        borderTop: '1px solid #4A2010',
+      }}
+    >
+      {/* Top brass rule */}
+      <div
+        className="h-px w-full"
+        style={{
+          background: 'linear-gradient(90deg, transparent 0%, #D4A055 20%, #F0C878 50%, #D4A055 80%, transparent 100%)',
+        }}
+      />
 
-      <div className="max-w-5xl mx-auto">
-        {/* Side elements for desktop */}
-        <div className="hidden lg:fixed lg:bottom-0 lg:left-10 lg:flex lg:flex-col lg:items-center gap-4">
+      <div className="max-w-5xl mx-auto pt-10 pb-8 px-6">
+
+        {/* Fixed side elements — desktop */}
+        <div className="hidden lg:fixed lg:bottom-0 lg:left-10 lg:flex lg:flex-col lg:items-center gap-5">
           <SocialLinks orientation="vertical" />
-          <div className="w-0.5 h-24 bg-nb-black" />
+          <div
+            className="w-px h-24"
+            style={{ background: 'linear-gradient(180deg, #C8A878 0%, transparent 100%)' }}
+          />
         </div>
 
-        <div className="hidden lg:fixed lg:bottom-0 lg:right-10 lg:flex lg:flex-col lg:items-center gap-4">
+        <div className="hidden lg:fixed lg:bottom-0 lg:right-10 lg:flex lg:flex-col lg:items-center gap-5">
           <a
             href="mailto:nishadkindre@gmail.com"
-            className="font-mono text-xs text-nb-muted hover:text-nb-black transition-colors duration-150"
-            style={{ writingMode: 'vertical-rl' }}
+            className="font-mono text-xs transition-colors duration-150"
+            style={{
+              writingMode: 'vertical-rl',
+              color: '#C8A878',
+              letterSpacing: '0.12em',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.color = '#D4A055')}
+            onMouseLeave={e => (e.currentTarget.style.color = '#C8A878')}
           >
             nishadkindre@gmail.com
           </a>
-          <div className="w-0.5 h-24 bg-nb-black" />
+          <div
+            className="w-px h-24"
+            style={{ background: 'linear-gradient(180deg, #C8A878 0%, transparent 100%)' }}
+          />
         </div>
 
         {/* Mobile footer */}
-        <div className="lg:hidden text-center mb-6">
-          <SocialLinks orientation="horizontal" className="justify-center mb-4" />
-          <a href="mailto:nishadkindre@gmail.com" className="font-mono text-xs text-nb-muted hover:text-nb-black transition-colors duration-150 block">
+        <div className="lg:hidden text-center mb-8">
+          <SocialLinks orientation="horizontal" className="justify-center mb-5" />
+          <a
+            href="mailto:nishadkindre@gmail.com"
+            className="font-mono text-xs block transition-colors duration-150"
+            style={{ color: '#C8A878', letterSpacing: '0.06em' }}
+          >
             nishadkindre@gmail.com
           </a>
         </div>
 
+        {/* Brass divider */}
+        <div className="divider-brass mb-6" />
+
         {/* Footer credit */}
         <div className="text-center">
-          <p className="font-mono text-xs text-nb-muted">
-            Built with ♥ by{' '}
+          <p className="font-mono text-xs" style={{ color: '#7A5840' }}>
+            Designed & built with care by{' '}
             <a
               href="https://github.com/nishadkindre"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-nb-black font-semibold underline underline-offset-2 decoration-nb-yellow hover:decoration-2 transition-all"
+              className="font-medium transition-colors duration-150"
+              style={{ color: '#C8A878' }}
+              onMouseEnter={e => (e.currentTarget.style.color = '#D4A055')}
+              onMouseLeave={e => (e.currentTarget.style.color = '#C8A878')}
             >
               Nishad Kindre
             </a>

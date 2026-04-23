@@ -5,22 +5,33 @@ module.exports = {
     extend: {
       colors: {
         nb: {
-          white: '#FAFAF5',      // cream background
-          black: '#0D0D0D',      // near-black
-          yellow: '#FFE500',     // primary accent
-          'yellow-hover': '#F0D800',
-          red: '#FF3B3B',        // secondary accent
-          blue: '#0052FF',       // tertiary accent
-          green: '#00C853',
-          gray: '#EDEDE5',       // subtle card bg / tag bg
-          'gray-mid': '#C8C6BE', // borders for subtle elements
-          muted: '#6B6860',      // body text muted
+          // ── Parchment surfaces ──────────────────────
+          white: '#F4EFE6',          // parchment page background
+          black: '#1E140A',          // warm near-black ink
+          // ── Brass accent (replaces yellow) ──────────
+          yellow: '#B8823A',         // brass amber — primary accent
+          'yellow-hover': '#D4A055', // lighter brass — hover state
+          // ── Supporting tones ────────────────────────
+          red: '#8C3020',            // deep burgundy
+          blue: '#3A5C8C',           // steel blue
+          green: '#4A7A55',          // sage green
+          gray: '#EAE0D2',           // warm cream-gray — alt section bg
+          'gray-mid': '#C8B09A',     // warm tan — borders
+          muted: '#7A5840',          // warm brown — muted text
+          // ── Leather (header / footer) ────────────────
+          leather: '#2D1508',
+          'leather-mid': '#4A2010',
+          'leather-light': '#7A3A18',
+          // ── Extra palettes ───────────────────────────
+          'brass-pale': '#F0DDB8',   // pale brass tint — tag bg
+          cream: '#FBF7F2',          // lightest surface — cards
         }
       },
       fontFamily: {
-        sans: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
-        mono: ['"DM Mono"', '"Courier New"', 'monospace'],
-        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        // Elegant serif trio for skeuomorphism
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans:    ['"Lora"',            'Georgia', 'serif'],
+        mono:    ['"IBM Plex Mono"',   '"Courier New"', 'monospace'],
       },
       fontSize: {
         'clamp-sm':  'clamp(0.875rem, 1vw, 1rem)',
@@ -33,12 +44,19 @@ module.exports = {
         'clamp-5xl': 'clamp(3rem, 8vw, 5.5rem)',
       },
       boxShadow: {
-        brutal:    '4px 4px 0px #0D0D0D',
-        'brutal-sm': '2px 2px 0px #0D0D0D',
-        'brutal-lg': '6px 6px 0px #0D0D0D',
-        'brutal-xl': '8px 8px 0px #0D0D0D',
-        'brutal-yellow': '4px 4px 0px #FFE500',
-        'brutal-red':    '4px 4px 0px #FF3B3B',
+        // ── Soft warm multi-layer shadows ─────────────
+        brutal:      '0 4px 16px rgba(60,30,10,0.16), 0 2px 6px rgba(60,30,10,0.10), inset 0 1px 0 rgba(255,255,255,0.35)',
+        'brutal-sm': '0 2px 8px rgba(60,30,10,0.12), 0 1px 3px rgba(60,30,10,0.08)',
+        'brutal-lg': '0 8px 28px rgba(60,30,10,0.18), 0 3px 10px rgba(60,30,10,0.11), inset 0 1px 0 rgba(255,255,255,0.30)',
+        'brutal-xl': '0 16px 48px rgba(60,30,10,0.22), 0 6px 18px rgba(60,30,10,0.13)',
+        'brutal-yellow': '0 4px 16px rgba(184,130,58,0.40)',
+        'brutal-red':    '0 4px 16px rgba(140,48,32,0.35)',
+        // ── Speciality shadows ─────────────────────────
+        'sk-inset':      'inset 0 2px 6px rgba(60,30,10,0.12), inset 0 1px 2px rgba(60,30,10,0.08)',
+        'sk-btn-pressed':'inset 0 3px 7px rgba(60,30,10,0.28), inset 0 1px 3px rgba(60,30,10,0.18)',
+        'sk-nav':        '0 3px 14px rgba(20,8,2,0.45), inset 0 1px 0 rgba(255,255,255,0.05)',
+        'sk-photo':      '0 0 0 8px #F0E4CC, 0 0 0 10px #C8A878, 6px 10px 30px rgba(60,30,10,0.35)',
+        'sk-tag':        'inset 0 1px 0 rgba(255,255,255,0.55), 0 1px 2px rgba(60,30,10,0.10)',
       },
       animation: {
         'fade-in':     'fadeIn 0.5s ease-out',
@@ -48,18 +66,9 @@ module.exports = {
         'ticker-rev':  'ticker 22s linear infinite reverse',
       },
       keyframes: {
-        fadeIn: {
-          '0%':   { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%':   { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)',    opacity: '1' },
-        },
-        ticker: {
-          '0%':   { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
+        fadeIn:  { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+        ticker:  { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
       },
     }
   },
