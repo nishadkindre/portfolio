@@ -89,21 +89,28 @@ export const workExperience = [
 // Featured projects
 export const featuredProjects = [
   {
+    title: 'medtigo Conference',
+    description: "Built a full-stack event registration platform for medtigo's Annual Health Conferences supporting INR & USD payments",
+    technologies: ['React', 'Vite', 'Razorpay', 'Stripe', 'Node.js', 'Express', 'MySQL'],
+    external: 'https://conference.medtigo.com',
+    image: './featured-projects/medtigo-conference.png'
+  },
+  {
     title: 'GitFlex',
     description: 'A platform for developers to showcase their GitHub Profile with enhanced features like analytics, one page portfolio & more.',
     technologies: ['React', 'Tailwind CSS', 'GitHub API', 'PWA'],
     github: 'https://github.com/nishadkindre/gitflex',
     external: 'https://gitflexx.vercel.app',
-    image: './featured-projects/gitflex.png'
+    image: './featured-projects/gitflex-new.png'
   },
-  {
-    title: 'SQLHub',
-    description: 'A SQL learning platform that runs entirely in your browser. Practice with real databases, execute complex queries, and master SQL without any setup or backend.',
-    technologies: ['React', 'Material-UI', 'SQL', 'Real-time DB'],
-    github: 'https://github.com/nishadkindre/sqlhub',
-    external: 'https://sqlhub.vercel.app',
-    image: './featured-projects/sqlhub.png'
-  },
+  // {
+  //   title: 'SQLHub',
+  //   description: 'A SQL learning platform that runs entirely in your browser. Practice with real databases, execute complex queries, and master SQL without any setup or backend.',
+  //   technologies: ['React', 'Material-UI', 'SQL', 'Real-time DB'],
+  //   github: 'https://github.com/nishadkindre/sqlhub',
+  //   external: 'https://sqlhub.vercel.app',
+  //   image: './featured-projects/sqlhub.png'
+  // },
   {
     title: 'Nova UI',
     description: 'A modern, JavaScript-first UI component library with 8 essential components & Storybook documentation. Perfect for learning modern React development.',
@@ -116,6 +123,13 @@ export const featuredProjects = [
 
 // Other notable projects
 export const otherProjects = [
+  {
+    title: 'SQLHub',
+    description: 'A SQL learning platform that runs entirely in your browser to practice SQL without any setup or backend.',
+    technologies: ['React', 'Material-UI', 'SQL', 'Real-time DB'],
+    github: 'https://github.com/nishadkindre/sqlhub',
+    external: 'https://sqlhub.vercel.app'
+  },
   {
     title: 'Viewport Sense',
     description: 'A comprehensive, lightweight viewport utility library for responsive web applications',
