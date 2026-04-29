@@ -170,5 +170,5 @@ export const personalInfo = {
   name: 'Nishad Kindre',
   email: 'nishadkindre@gmail.com',
   location: 'Pune, India',
-  resumeUrl: '/resume.pdf'
+  resumeUrl: '../../public/Nishad_Kindre_Developer_Resume_2026.pdf'
 };

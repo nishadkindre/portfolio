@@ -49,7 +49,7 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <Button href="/resume.pdf" variant="primary" size="sm" className="ml-2">
+          <Button href="../../../public/Nishad_Kindre_Developer_Resume_2026.pdf" variant="primary" size="sm" className="ml-2">
             Resume
           </Button>
         </div>
@@ -93,7 +93,7 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <Button href="/resume.pdf" variant="primary" className="mt-4">
+          <Button href="../../../public/Nishad_Kindre_Developer_Resume_2026.pdf" variant="primary" className="mt-4">
             Resume
           </Button>
         </div>
