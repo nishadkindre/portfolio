@@ -25,7 +25,7 @@ const Contact = () => {
 
             <p className="text-nb-black/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
               My inbox is always open. Whether you have a question, an opportunity, or just want
-              to say hi — I'll try my best to get back to you!
+              to say hi — I'll definitely get back to you!
             </p>
 
             <Button
