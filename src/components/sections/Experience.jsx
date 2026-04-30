@@ -71,6 +71,23 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+
+                  {/* Task Archive link — only for medtigo entries */}
+                  {job.company.toLowerCase() === 'medtigo' && (
+                    <div className="mt-7 pt-5 border-t-2 border-nb-gray flex flex-wrap items-center gap-4">
+                      <a
+                        href="/medtigo/tasks"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-brutal text-xs inline-flex items-center gap-2"
+                      >
+                        Task Archive ↗
+                      </a>
+                      <span className="font-mono text-xs text-nb-muted">
+                        Full log of features &amp; improvements shipped
+                      </span>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
