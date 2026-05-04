@@ -59,7 +59,7 @@ export const workExperience = [
     range: 'November 2024 - Present',
     description: [
       // 'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
-      'Automated licensing invoice workflow for US healthcare professionals with QuickBooks integration, processing invoices in real-time as they are created, with 800+ invoices ($450K+) and $350K+ payments handled to date with zero manual intervention post invoice creation',
+      'Automated licensing invoice workflow for US healthcare professionals with QuickBooks integration, processing invoices in real-time as they are created, with 1K+ invoices ($500K+) and $400K+ payments handled to date with zero manual intervention post invoice creation',
       'Built a hierarchical invoice analytics dashboard (year → month → day) for senior management with calendar and chart views, enabling trend analysis of invoice volume, revenue, and distinct users across time periods',
       'Created automated PDF certificate generation system for course certification, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Improved crucial cross-platform LMS API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
