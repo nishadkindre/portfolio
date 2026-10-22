@@ -59,11 +59,11 @@ export const workExperience = [
     range: 'November 2024 - Present',
     description: [
       // 'Designed comprehensive database architecture and delivered full-stack features for global healthcare professionals',
-      'Automated licensing invoice workflow for US healthcare professionals with QuickBooks integration, processing invoices in real-time as they are created, with 1K+ invoices ($500K+) and $400K+ payments handled to date with zero manual intervention post invoice creation',
+      'Automated licensing invoice workflow for US healthcare professionals with QuickBooks integration, processing invoices in real-time as they are created, with 3K+ invoices ($2M+) and $1.6M+ payments handled to date with zero manual intervention post invoice creation',
       'Built a hierarchical invoice analytics dashboard (year → month → day) for senior management with calendar and chart views, enabling trend analysis of invoice volume, revenue, and distinct users across time periods',
       'Created automated PDF certificate generation system for course certification, replacing manual Figma workflows and paid third-party services to improve accuracy, speed, and reduce operational costs',
       'Improved crucial cross-platform LMS API response time by ~80%, replacing N+1 query patterns with batched parallel processing and reducing queries from O(N) to O(1)',
-      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows, handling $100K+ in credit transactions to date',
+      'Built a ledger-based credit management system to track user transactions with full auditability, ensuring accurate balance computation and enabling scalable credit-based workflows, handling $300K+ in credit transactions to date',
       'Built an SMS-based communication system using Twilio for consultation workflows, enabling automated notifications and real-time messaging between users and internal teams',
       'Developed multi-currency payment infrastructure using Stripe and Razorpay integrations to process payments across multiple products',
       'Led modernization initiative migrating legacy codebase to current frameworks, establishing best practices and improving system performance',
